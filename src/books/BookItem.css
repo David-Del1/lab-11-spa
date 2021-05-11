@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+}
+
+.BookItem {
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.BookItem h2 {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.BookItem h3 {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
