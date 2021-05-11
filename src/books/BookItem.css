@@ -1,5 +1,9 @@
 a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .BookItem {
@@ -8,7 +12,7 @@ a {
   margin: 1rem;
   display: flex;
   justify-content: center;
-  width: fit-content;
+  
 }
 
 .BookItem h2 {
@@ -17,6 +21,10 @@ a {
   color: black;
   font-size: 1.5rem;
   margin: 1rem;
+}
+
+.BookItem img {
+  width: 200px;
 }
 
 .BookItem h3 {

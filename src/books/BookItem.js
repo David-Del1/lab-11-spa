@@ -11,7 +11,7 @@ export default class BookItem extends Component {
       <li className='BookItem'>
         <Link to={`/books/${book.id}`}>
           <h2>{book.title}</h2>
-          <img src='assets/BoI.jpg' alt=''/>
+          <img src={book.image_url} alt=''/>
           <h3>{book.pub_year}</h3>
         </Link>
       </li>
