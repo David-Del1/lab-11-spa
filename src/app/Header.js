@@ -8,6 +8,13 @@ class Header extends Component {
       <header className="Header">
 
         <h1>David's Book List</h1>
+
+        <div className='navLinks'>
+          <a href='/'>Home</a>
+          <a href='/books'>Book List</a>
+        </div>
+
+       
         
       </header>
     );
