@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getBooks } from '../utils/books-api';
 import BookList from './BookList';
+import './BooksPage.css';
 
 export default class BooksPage extends Component {
   state = {
@@ -22,7 +23,7 @@ export default class BooksPage extends Component {
 
     return (
       <div className='BooksPage'>
-        <h2>List o' Books</h2>
+  
 
         <BookList books={books}/>
         

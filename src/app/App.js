@@ -3,6 +3,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from '../home/Home';
 import BooksPage from '../books/BooksPage';
+import BookDetailPage from '../book/BookDetailPage';
+import BookAddPage from '../book-add/BookAddPage';
 import {
   BrowserRouter as Router,
   Route,
@@ -33,9 +35,14 @@ class App extends Component {
                 )}
               />
 
+              <Route path="/books/add" exact={true}
+                render={routerProps => (
+                  <BookAddPage {...routerProps}/>
+                )}
+              />
               <Route path="/books/:id"
                 render={routerProps => (
-                  <div>Implement a page for id {routerProps.match.params.id}</div>
+                  <BookDetailPage {...routerProps}/>
                 )}
               />
 

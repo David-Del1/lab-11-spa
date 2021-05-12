@@ -6,7 +6,7 @@ export default class BookItem extends Component {
 
   render() {
     const book = this.props.book;
-
+    console.log(book);
     return (
       <li className='BookItem'>
         <Link to={`/books/${book.id}`}>

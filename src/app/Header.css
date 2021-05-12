@@ -1,6 +1,25 @@
 .Header {
   padding: 20px;
   border-bottom: 1px solid lightgray;
+  display: flex;
+ 
+}
+
+.Header h1 {
+  width: 30%;
+}
+
+.Header .navLinks {
+  display: flex;
+  color: black;
+  font-size: 1.2rem;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.Header .navLinks a {
+  color: black;
+  cursor: pointer;
 }
 
 h1 {
