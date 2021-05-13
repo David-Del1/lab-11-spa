@@ -7,7 +7,7 @@ export default class BookForm extends Component {
     author: '',
     genre: '',
     image_url: '',
-    pub_year: 2000
+    pub_year: 2020
   }
 
   componentDidMount() {
@@ -18,6 +18,7 @@ export default class BookForm extends Component {
   }
 
   handleSubmit = e => {
+    console.log(this.state);
     e.preventDefault();
     this.props.onSubmit(this.state);
   }
@@ -45,9 +46,11 @@ export default class BookForm extends Component {
   render() {
     const { title, author, genre, image_url, pub_year } = this.state;
     const { book } = this.props;
-
+    console.log(genre);
     return (
-      <form className="BookForm">
+      <form 
+        onSubmit={this.handleSubmit}
+        className="BookForm" >
         <p>
           <label>
             <span>Book Title</span>
@@ -68,11 +71,11 @@ export default class BookForm extends Component {
             <span>Book Genre</span>
             <select name="genre" required placeholder="Genre" value={genre} onChange={this.handleChangeGenre}>
               <option value="" disabled>Genre</option>
-              <option>Fiction</option>
-              <option>Non-fiction</option>
-              <option>Science</option>
-              <option>Philosophy</option>
-              <option>Social Science</option>
+              <option value="fiction">Fiction</option>
+              <option value="non-fiction">Non-fiction</option>
+              <option value="science">Science</option>
+              <option value="philosophy">Philosophy</option>
+              <option value="social science">Social Science</option>
             </select>
           </label>
         </p>

@@ -9,7 +9,7 @@ export default class BookAddPage extends Component {
   }
 
   handleAdd = async bookToAdd => {
-
+    console.log(bookToAdd);
     const { history } = this.props;
 
     try {
