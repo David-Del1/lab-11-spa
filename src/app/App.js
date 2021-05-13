@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from '../home/Home';
 import BooksPage from '../books/BooksPage';
+import BookForm from '../common/BookForm';
 import BookDetailPage from '../book/BookDetailPage';
 import BookAddPage from '../book-add/BookAddPage';
 import {
@@ -41,8 +42,16 @@ class App extends Component {
                 )}
               />
               <Route path="/books/:id"
+                exact={true}
                 render={routerProps => (
                   <BookDetailPage {...routerProps}/>
+                )}
+              />
+              
+              <Route path="/books/:id/edit"
+                exact={true}
+                render={routerProps => (
+                  <BookForm {...routerProps}/>
                 )}
               />
 
